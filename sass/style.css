@@ -33,10 +33,6 @@ p {
   margin: auto;
 }
 
-body {
-  background: rgba(218, 190, 190, 0.4);
-}
-
 /*header*/
 .bg {
   background-image: url("../images/bg_header_1.png");
@@ -135,13 +131,115 @@ body {
   color: #ffffff;
   font-family: "Raleway",sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 23px;
+  font-weight: 500;
+  line-height: 20px;
   text-transform: uppercase;
   padding: 21px 39px;
   -webkit-box-shadow: inset 0 -3px 0 #736357;
           box-shadow: inset 0 -3px 0 #736357;
   border-radius: 3px;
   background-color: #998675;
+}
+
+/*about us */
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
+}
+
+.abt-box {
+  width: 22%;
+  height: 40vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.abt-box img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.abt-box h4 {
+  color: #555555;
+  font-family: 'Raleway';
+  font-size: 22px;
+  font-weight: 400;
+  padding: 20px 0 37px 0;
+}
+
+.abt-box P {
+  color: #8c8c8c;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.w {
+  width: 22%;
+  height: 40vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.w img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.w h4 {
+  color: #555555;
+  font-family: 'Raleway';
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.w P {
+  color: #8c8c8c;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.line-box {
+  width: 70px;
+  height: 3px;
+  margin: auto;
+  background: #ffffff;
+}
+
+.abt-box:hover .line-box {
+  background-color: #c7b299;
+}
+
+.abt-box:hover h4 {
+  color: #c7b299;
 }
 /*# sourceMappingURL=style.css.map */

@@ -19,9 +19,7 @@ p { font-size: 16px; }
     width:80%;
     margin: auto;
 }
-body{
-    background: rgba(218, 190, 190, .4);
-}
+
 /*header*/
 .bg{
     background-image: url('../images/bg_header_1.png');
@@ -98,8 +96,8 @@ body{
         color: #ffffff;
         font-family: "Raleway",sans-serif;
         font-size: 14px;
-        font-weight: 400;
-        line-height: 23px;
+        font-weight: 500;
+        line-height: 20px;
         text-transform: uppercase;
         padding:21px 39px;
         box-shadow: inset 0 -3px 0 #736357;
@@ -107,5 +105,77 @@ body{
         background-color: #998675;
     }
 }
-@media screen and (max-width:1100px) and (min-width:800px){
+
+/*about us */
+
+.about{
+    display:flex;
+    justify-content:space-between;
+    padding:80px 0;
+    
+}
+.abt-box{
+    width:22%;
+    height:40vh;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    img{
+        align-self: center;
+    }
+    h4{
+        color: #555555;
+        font-family:'Raleway';
+        font-size: 22px;
+        font-weight: 400;
+        padding:20px 0 37px 0;
+    }
+    P{
+        color: #8c8c8c;
+        font-family:'Montserrat';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+.w{
+    width:22%;
+    height:40vh;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    img{
+        align-self: center;
+    }
+    h4{
+        color: #555555;
+        font-family:'Raleway';
+        font-size: 22px;
+        font-weight: 400;
+        padding:10px;
+    }
+    P{
+        color: #8c8c8c;
+        font-family:'Montserrat';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+.line-box{
+    width: 70px;
+    height: 3px;
+    margin:auto;
+    background:#ffffff;
+    
+}
+.abt-box:hover{
+    .line-box{
+        background-color: #c7b299;
+    }
+    h4{
+        color: #c7b299;
+    }
 }

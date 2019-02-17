@@ -194,44 +194,6 @@ p {
   line-height: 24px;
 }
 
-.w {
-  width: 22%;
-  height: 35vh;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.w img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.w h4 {
-  color: #555555;
-  font-family: 'Raleway';
-  font-size: 22px;
-  font-weight: 400;
-  padding: 10px;
-}
-
-.w P {
-  color: #8c8c8c;
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
-}
-
 .line-box {
   width: 70px;
   height: 3px;
@@ -668,5 +630,212 @@ figure:hover p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+/*information*/
+.information {
+  background-color: #191919;
+  padding: 50px 0;
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-box {
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info-box h3 {
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-weight: 400;
+  letter-spacing: -1.36px;
+}
+
+.info-box h4 {
+  color: #ffffff;
+  font-family: 'Raleway',sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.info-box p {
+  color: #6b6b6b;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+/*inf-1*/
+.inf-1 p {
+  padding: 20px 0;
+}
+
+.logo-inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-info img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+}
+
+.btn-info a {
+  color: #d1d1d1;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/*inf-2*/
+.posts-info {
+  padding: 15px 0;
+}
+
+.posts-info span {
+  color: #363636;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.posts-info:hover span {
+  color: #ffffff;
+}
+
+.posts-info:hover p {
+  color: #c7b299;
+}
+
+.p {
+  border-bottom: 1px solid  #595f6f;
+}
+
+/*inf-3*/
+.twitter-info h4 {
+  padding-bottom: 30px;
+}
+
+.twit-info {
+  padding: 15px 0;
+}
+
+.twit-info span {
+  color: #363636;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.twit-info:hover span {
+  color: #ffffff;
+}
+
+.twit-info:hover p {
+  color: #c7b299;
+}
+
+.t {
+  border-bottom: 1px solid  #595f6f;
+}
+
+/*inf-4*/
+.inf-4 h4 {
+  padding-bottom: 40px;
+}
+
+.widget-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.widget {
+  width: 48%;
+}
+
+.w {
+  margin-bottom: 8px;
+}
+
+/*footer*/
+.footer {
+  background: #111111;
+}
+
+.foot-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+.ft-bx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ft-bx li {
+  padding: 0 7px;
+}
+
+.ft-bx p {
+  color: #959595;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.ft-bx span {
+  color: #555555;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.brd {
+  border-right: 1px solid #595f6f;
 }
 /*# sourceMappingURL=style.css.map */

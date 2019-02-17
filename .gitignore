@@ -1,0 +1,5 @@
+﻿#folder video
+video/*.mp4
+#folder images
+images/
+

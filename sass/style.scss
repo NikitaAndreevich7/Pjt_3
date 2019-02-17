@@ -22,7 +22,7 @@ p { font-size: 16px; }
 }
 
 /*header*/
-.bg{
+.bg-one{
     background-image: url('../images/bg_header_1.png');
     background-position:center;
     background-repeat:no-repeat;
@@ -30,6 +30,7 @@ p { font-size: 16px; }
     width:100%;
     height:100vh;
 }
+
 .header-top{
     width:100%;
     display: flex;
@@ -112,12 +113,13 @@ p { font-size: 16px; }
 .about{
     display:flex;
     justify-content:space-between;
-    padding:5% 0 0  0;
+    padding:5% 0 10%  0;
+
     
 }
 .abt-box{
     width:22%;
-    height:10%;
+    height:15%;
     text-align:center;
     display:flex;
     flex-direction:column;
@@ -142,7 +144,7 @@ p { font-size: 16px; }
 }
 .w{
     width:22%;
-    height:40vh;
+    height:35vh;
     text-align:center;
     display:flex;
     flex-direction:column;
@@ -170,6 +172,7 @@ p { font-size: 16px; }
     height: 3px;
     margin:auto;
     background:#ffffff;
+    margin-top:20px;
     
 }
 .abt-box:hover{
@@ -286,7 +289,7 @@ p { font-size: 16px; }
         font-size: 14px;
         font-weight: 300;
         line-height: 21px;
-        padding:10px 21px;
+        padding:7px 10px;
         border-radius: 3px;
         border: 1px solid #ebebeb;
         transition-duration:.3s;
@@ -338,3 +341,182 @@ figure:hover{
 .p-4, .p-5, .p-6{
     margin-top:1.5%;
 }
+
+/*video*/
+
+.video{
+    width:100%;
+    max-width:1500px;
+    height:auto;
+    margin:0 auto;
+    video{
+        width:100%;
+        height:auto;
+    }
+}
+
+/*for-mobile*/
+
+.for-mobile{
+    display:flex;
+    padding-top:70px;
+}
+
+.mobile-txt{
+
+    h4{
+        color: #555555;
+        font-family: "Raleway",sans-serif;
+        font-size: 30px;
+        font-weight: 400;        
+    }
+    h5{
+        color: #8c8c8c;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size:16px;
+        line-height: 28px;
+        padding:20px 0;     
+        
+    }
+
+     ul{
+        display:flex;
+        flex-direction:column;
+        padding-left:50px;
+        p{
+            padding-left:20px;
+            color: #8c8c8c;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            line-height: 28px;
+        }
+        li{
+             display:flex;
+             padding-top:2%;
+            
+            }
+        img{
+             align-self: center;
+            }
+    }
+}
+
+/*numbers*/
+.numbers{
+     background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+.list-numbers{
+    display:flex;
+    width:80%;
+    margin:auto;
+    justify-content:space-between;
+    padding:50px 0;
+    img{
+        align-self: center;
+       }
+    li{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    span{
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 36px;
+        padding:20px;
+    }
+    p{
+        color: #c7b299;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-transform: uppercase;        
+    }
+}
+.line-numb{
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    margin:auto;
+    margin-top:20px;
+}
+
+/*posts*/
+.recent-posts{
+    padding:50px;
+    
+    h4{
+        color: #555555;
+        font-family: "Raleway",sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom:20px;
+        text-align:center;
+    }
+    p{
+        color: #8c8c8c;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        padding-bottom:20px;
+        text-align:center;
+    }
+}
+.posts-container{
+    display:flex;
+    justify-content:space-between;
+
+}
+.box-post{
+    width:32%;
+    
+    img{
+        max-width:100%;
+    }
+    h4{
+        color: #555555;
+        font-family: 'Raleway';
+        font-size: 20px;
+        font-weight: 500;
+        &:hover{
+            color: #c7b299;
+        }
+    }
+    p{
+        color: #8c8c8c;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+    &:hover{
+        h4{
+            color: #c7b299;
+        }
+        p{
+            color:#ffffff;
+        }
+    }
+}
+
+/*frands*/
+
+.frands{
+    background-image:url('../images/photo_footer.png');
+    padding:125px 0;
+    
+}
+.frands-img{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    img{
+        align-self: center;
+       }
+    }

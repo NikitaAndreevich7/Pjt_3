@@ -62,7 +62,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header-top {
@@ -115,10 +115,6 @@ p {
 
 .links a:hover {
   color: #c7b299;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
 }
 
 .header-center {
@@ -268,7 +264,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px;
+  padding: 30px 10px 30px 10px;
 }
 
 .wp-bg {
@@ -327,7 +323,7 @@ p {
 
 .project-txt {
   text-align: center;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 

@@ -1,0 +1,50 @@
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  /*header*/
+  .bg-one {
+    height: auto;
+  }
+  .links {
+    display: none;
+  }
+  .header-center {
+    width: 85%;
+  }
+  /*slider*/
+  .slider-txt {
+    width: 85%;
+  }
+  /*project*/
+  .project-txt {
+    width: 90%;
+  }
+  /*mobile*/
+  .mb-photo {
+    position: absolute;
+    bottom: 0;
+    width: 45%;
+    height: auto;
+  }
+  .mobile-txt {
+    width: 60%;
+    margin-left: auto;
+    padding-bottom: 30px;
+  }
+  .numbers span {
+    font-size: 40px;
+  }
+  /*information*/
+  .info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .inf-4 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style1000.css.map */

@@ -1,0 +1,233 @@
+@media screen and(min-width:320px) and (max-width:479px){
+    .wrapper{ width:95%;}
+    h1{ font-size: 40px; }
+    h2{ font-size: 30px; }
+    h3{ font-size: 27px; }
+    h4{ font-size: 20px; }
+    p { font-size: 13px; }
+    /*header*/
+    
+    .bg-one{
+        height:auto;
+    }
+    .links{
+        display:none;
+    }
+    .header-center{
+        width:100%;
+        padding-bottom:25%;
+    }
+    .header-top{
+        height:50px;
+        h3{
+            display:none;
+        }
+    }
+    .logo{ width:20%;margin:auto}
+    @media screen and(max-width:690px){
+        .header-center{
+            h2{
+                display:none;
+            }
+        }
+    }
+    
+    /*about*/
+    .about{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap; 
+        
+    }
+    .abt-box{
+        width:100%;
+        height:auto;
+        margin:auto;
+        padding:20px 0;
+        h4{
+            padding:10px 0 20px 0;
+
+        }
+    }
+ 
+    
+      /*slider*/
+      .slider-txt{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 5%;
+    }
+    .slider-box{ display:none; }
+    
+    /*button*/
+
+    .wp-theme{
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column;
+        padding:20px 10px 20px 10px;
+    }
+    
+    .wp-button{
+        width:20%;
+        padding:20px 0 0 70%;
+        
+        a{
+        padding:13px 20px;            
+        }
+    }
+    
+      /*out-project*/
+      .project-txt{
+        text-align:center;
+        width:95%;
+        margin:0 auto;
+        p{
+            display:none;
+        }
+      }
+      .pjt-button{
+        display:none;
+    
+    }
+      .box-photo{
+        width:100%;
+      }
+      .p-1, .p-2{ margin-bottom:35px;}
+      .p-4, .p-5, .p-6{ display:none;}
+    .project-gallery{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        padding-top:5%;
+        justify-content:space-between;
+    }
+       /*mobile*/
+    
+       .mb-photo{
+        display:none;
+      }
+      .mobile-txt{
+          width:100%;
+          margin-left:auto;
+          padding-bottom:30px;
+      }
+      .numbers{
+          span{
+              font-size:40px;
+          }
+      }
+    
+      /*list-numbers*/
+      .list-numbers{
+        display:flex;
+        width:100%;
+        margin:auto;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        padding:30px 0;
+        img{
+            align-self: center;
+           }
+        li{
+            display:flex;
+            flex-direction:column;
+            text-align:center;
+            width:100%;
+        }
+        span{
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-size: 55px;
+            font-weight: 400;
+            line-height: 36px;
+            padding:10px;
+        }
+        p{
+            color: #c7b299;
+            font-family: 'Montserrat',sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            text-transform: uppercase;        
+        }
+    }
+    .line-numb{
+        display:none;
+    }
+    .adp-480{ margin-bottom:40px;}
+    
+      /*posts*/
+      .posts-container{
+        display:flex;
+        flex-direction:column;
+    }
+    .recent-posts{
+        padding:20px 10px 20px 10px;
+        h4{
+            padding:50px 0 30px 0;
+        }
+    }
+.b-480{ display:none;}
+    .box-post{
+        width:100%;
+        max-width:100%;
+        img{
+            width:100%;
+        max-width:100%;
+        }
+        h4{
+            padding:10px 0 5px 0;
+        }
+        p{
+            padding:0 0 50px;
+        }
+    }
+    
+      /*freands*/
+    
+      .frands{
+        background-image:url('../images/photo_footer.png');
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        padding:10% 0;
+        
+    }
+    .frands-img{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        img{
+            align-self: center;
+            width:20%;
+            max-width:100%;       
+           }
+        }
+    /*information*/
+    
+    .info-container{
+        flex-direction:column;
+    }
+    .info-box{
+        width:100%;
+        margin-top:30px;
+    }
+    .inf-4{
+        display:none;
+    }
+    .twitter-info{
+        h4{
+            padding-bottom:0;
+        }
+    }
+      /*footer*/
+    .foot-3, .foot-4, .foot-5, .foot-6{
+        display:none;
+    }
+      .brd{
+        padding-bottom:5px;
+        border:none; 
+    }
+    
+    }

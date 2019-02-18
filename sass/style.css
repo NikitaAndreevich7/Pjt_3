@@ -62,7 +62,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .header-top {
@@ -76,7 +76,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 125px;
+  height: 10%;
+  padding-top: 5%;
 }
 
 .logo {
@@ -159,7 +160,7 @@ p {
   background-color: #998675;
 }
 
-/*about us */
+/*about upp */
 .about {
   display: -webkit-box;
   display: -ms-flexbox;

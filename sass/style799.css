@@ -1,0 +1,210 @@
+@media screen and (min-width: 480px) and (max-width: 799px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  /*header*/
+  .bg-one {
+    height: auto;
+  }
+  .links {
+    display: none;
+  }
+  .header-center {
+    width: 100%;
+    padding-bottom: 25%;
+  }
+  .header-top {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 799px) and (max-width: 690px) {
+  .header-center h2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 799px) {
+  /*about*/
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .abt-box {
+    width: 49%;
+    height: auto;
+    margin: auto;
+  }
+  /*mobile*/
+  .mb-photo {
+    display: none;
+  }
+  .mobile-txt {
+    width: 100%;
+    margin-left: auto;
+    padding-bottom: 30px;
+  }
+  .numbers span {
+    font-size: 40px;
+  }
+  /*slider*/
+  .slider-txt {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+  }
+  /*button*/
+  .wp-button {
+    width: 20%;
+    padding: 10px 0 0 0;
+  }
+  .wp-button a {
+    padding: 13px 20px;
+  }
+  /*out-project*/
+  .project-txt {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .pjt-button {
+    display: none;
+  }
+  .box-photo {
+    width: 49%;
+  }
+  .p-4, .p-5, .p-6 {
+    margin-top: 0;
+  }
+  /*list-numbers*/
+  .list-numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px 0;
+  }
+  .list-numbers img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .list-numbers li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 20%;
+  }
+  .list-numbers span {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    padding: 10px;
+  }
+  .list-numbers p {
+    color: #c7b299;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  /*posts*/
+  .posts-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box-post {
+    width: 100%;
+    max-width: 100%;
+  }
+  .box-post img {
+    width: 100%;
+    max-width: 100%;
+  }
+  /*freands*/
+  .frands {
+    background-image: url("../images/photo_footer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10% 0;
+  }
+  .frands-img {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .frands-img img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 20%;
+    max-width: 100%;
+  }
+  /*information*/
+  .info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .inf-4 {
+    display: none;
+  }
+  .twitter-info h4 {
+    padding-bottom: 0;
+  }
+  /*footer*/
+  .foot-3, .foot-4, .foot-5, .foot-6 {
+    display: none;
+  }
+  .brd {
+    padding-bottom: 5px;
+    border: none;
+  }
+}
+/*# sourceMappingURL=style799.css.map */

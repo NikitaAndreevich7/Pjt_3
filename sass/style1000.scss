@@ -8,9 +8,23 @@
         display:none;
     }
     .header-center{
-        width:85%;
-        padding-bottom:25%;
+    width:80%;
+    padding-bottom:25%;
     }
+.logo{ 
+    width:7%;margin:auto;
+    img{
+        align-self: center;
+    }
+    h3{display:none;}
+}
+
+/*burger-menu*/
+.burger-menu{
+    display:block;
+}
+
+
 
 /*slider*/
 

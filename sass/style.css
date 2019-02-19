@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*general style*/
 * {
   margin: 0;
@@ -118,6 +119,200 @@ p {
   color: #c7b299;
 }
 
+/*ERROR*/
+#modal_form {
+  width: 50%;
+  height: 50%;
+  /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: fixed;
+  /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 45%;
+  /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 40%;
+  /* пoлoвинa экрaнa слевa */
+  margin-top: -300px;
+  margin-left: -150px;
+  /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none;
+  /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0;
+  /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 100;
+  /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
+}
+
+#modal_form h4 {
+  font-family: 'Raleway',sans-serif;
+  font-size: 25px;
+  color: #555555;
+  padding: 30px 5px;
+}
+
+#modal_form p, #modal_form a {
+  font-family: sans-serif;
+  color: #555555;
+  padding: 0 0 5px 20px;
+  font-size: 20px;
+}
+
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Пoдлoжкa */
+#overlay {
+  z-index: 3;
+  /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position: fixed;
+  /* всегдa перекрывaет весь сaйт */
+  background-color: #000;
+  /* чернaя */
+  opacity: 0.8;
+  /* нo немнoгo прoзрaчнa */
+  -moz-opacity: 0.8;
+  /* фикс прозрачности для старых браузеров */
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%;
+  /* рaзмерoм вo весь экрaн */
+  top: 0;
+  /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left: 0;
+  cursor: pointer;
+  display: none;
+  /* в oбычнoм сoстoянии её нет) */
+}
+
+/*ERROR*/
+/*burger-menu*/
+.burger-menu {
+  display: none;
+}
+
+.burger-menu__link {
+  padding: 15px;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  color: #fff;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+}
+
+.burger-menu__link:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.burger-menu__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.burger-menu_active .burger-menu__overlay {
+  display: block;
+}
+
+.burger-menu__button {
+  position: fixed;
+  left: 30px;
+  z-index: 30;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.burger-menu__button:hover .burger-menu__lines {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background: #cec9c9;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::before {
+  content: '';
+  top: -12px;
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: 12px;
+}
+
+.burger-menu_active .butger-menu__button,
+.burger-menu_active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu_active .burger-menu__lines::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.burger-menu_active .burger-menu__lines::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.burger-menu__nav {
+  position: fixed;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background: #2a2a2a;
+  overflow: auto;
+  left: -100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 50px 50px 0 20px;
+}
+
+.burger-menu_active .burger-menu__nav {
+  left: 0;
+}
+
+/*burger-menu*/
 .header-center {
   width: 70%;
   margin: 0 auto;

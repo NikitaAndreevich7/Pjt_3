@@ -12,7 +12,7 @@
         <title>Pjt_3</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="bg-one">
             <div class="content">
                 <div class="wrapper">
@@ -20,17 +20,38 @@
                         <div class="logo">
                             <img src="images/logos.png" alt="">
                             <h3>Waxom</h3>
+
+                            <!-- burger-menu -->
+                            <div class="burger-menu">
+                                    <a href="#" class="burger-menu__button">
+                                        <span class="burger-menu__lines">   </span>
+                                    </a>
+                                    <nav class="burger-menu__nav">
+                                        <a href="#home" class="burger-menu__link" onclick="slowScroll('#home')">Главная</a>
+                                        <a href="#about" class="burger-menu__link" onclick="slowScroll('#about')">О нас</a>
+                                        <a href="#project" class="burger-menu__link" onclick="slowScroll('#project')">Портфолио</a>
+                                        <a href="#mobile" class="burger-menu__link" onclick="slowScroll('#mobile')">Особенности</a>
+                                        <a href="#messages" class="burger-menu__link" onclick="slowScroll('#messages')">Блог</a>
+                                        <a href="#" class="burger-menu__link" >Расценка</a>
+                                        <a href="#shorts" class="burger-menu__link" onclick="slowScroll('#shorts')">Шорткоды</a>
+                                        <a href="#go"  id="go" class="burger-menu__link">Контакты</a>
+                                    </nav>
+                                    <div class="burger-menu__overlay">
+                                    </div>
+                                </div>
+                            <!-- burger-menu -->
+
                         </div> 
                     
                             <ul class="links">
-                                <li class="nav"> <a href="#" class="menu-item" onclick="slowScroll('#home')">Главная</a> </li>
-                                <li class="nav"> <a href="#" class="menu-item" onclick="slowScroll('#home')">О нас</a> </li>
-                                <li class="nav"> <a href="#" class="menu-item" onclick="slowScroll('#home')">Портфолио</a> </li>
-                                <li class="nav"> <a href="#" class="menu-item" onclick="slowScroll('#home')">Особенности</a> </li>
-                                <li class="nav"> <a href="#" class="menu-item" onclick="slowScroll('#home')">Блог</a> </li>
-                                <li class="nav"> <a href="#" class="menu-item" onclick="slowScroll('#home')">Расценка</a> </li>
-                                <li class="nav"> <a href="#" class="menu-item" onclick="slowScroll('#home')">Шорткоды</a> </li>
-                                <li class="nav"> <a href="#" class="menu-item" onclick="slowScroll('#home')">Контакты</a> </li>
+                                <li class="nav"> <a href="#home" class="menu-item" onclick="slowScroll('#home')">Главная</a> </li>
+                                <li class="nav"> <a href="#about" class="menu-item" onclick="slowScroll('#about')">О нас</a> </li>
+                                <li class="nav"> <a href="#project" class="menu-item" onclick="slowScroll('#project')">Портфолио</a> </li>
+                                <li class="nav"> <a href="#mobile" class="menu-item" onclick="slowScroll('#mobile')">Особенности</a> </li>
+                                <li class="nav"> <a href="#messages" class="menu-item" onclick="slowScroll('#messages')">Блог</a> </li>
+                                <li class="nav"> <a href="#" class="menu-item" >Расценка</a> </li>
+                                <li class="nav"> <a href="#shorts" class="menu-item" onclick="slowScroll('#shorts')">Шорткоды</a> </li>
+                                <li class="nav"> <a href="#go" id="go" class="menu-item" >Контакты</a> </li>
                             </ul>
                         
                     </div>
@@ -45,8 +66,24 @@
             </div>
         </div>
     </header>
-    <!-- about upp -->
-    <section>
+
+    <!-- ERROR -->
+    <div id="modal_form"><!-- Сaмo oкнo --> 
+        <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть --> 
+       <h4>Телефон:</h4>
+       <p>+3809435344</p>
+       <p>+3834435353</p>
+       <p>+3809465328</p>
+       <h4>E-mail</h4>
+       <p>Nikita.Babanin.@mail.ru</p>
+       <p>portfolio-@mail.ru</p>
+       <h4>Веб-сайт</h4>
+       <p> <a href="https://alluine.ru/pjt_2/">alluine.ru/pjt_2/</a></p>
+  </div>
+  <div id="overlay">Lorem, ipsum.</div><!-- Пoдлoжкa -->
+    <!-- ERROR -->
+        <!-- about upp -->
+    <section id="about">
         <div class="wrapper">
             <div class="about">
                 <div class="web-app abt-box w">
@@ -100,7 +137,7 @@
                         <h4><span>Waxom</span> многоцелевая тема</h4>
                         <p>Не забудьте оценить шаблон. Большое спасибо!</p>
                     </div>
-                    <div class="wp-button">
+                    <div class="wp-button" id="cent">
                         <a href="#">купить</a>
                     </div>
                 </div>
@@ -108,7 +145,7 @@
         </div>
     </section>
     <!-- gallery -->
-    <section>
+    <section id="project">
         <div class="wrapper">
             <div class="our-project">
                 <div class="project-txt">
@@ -182,7 +219,7 @@
         <video src="video/Peru 8K HDR 60FPS (FUHD).mp4" controls poster="images/photo.png"></video>
     </section>
     <!-- for-mobile -->
-    <section>
+    <section id="mobile">
     <div class="content">
         <div class="wrapper">
             <div class="for-mobile">
@@ -244,7 +281,7 @@
             </ul>
         </div>
     </section>
-    <section class="recent-posts">
+    <section class="recent-posts" id="messages">
         <div class="containe">
             <div class="wrapper">
                 <h4>Последние сообщения</h4>
@@ -293,7 +330,7 @@
         </div>
     </section>
     <!-- information -->
-    <section class="information">
+    <section class="information" id="shorts">
         <div class="wrapper">
            <div class="info-container">
 

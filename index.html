@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="sass/style1000.css">
     <link rel="stylesheet" href="sass/style799.css">
     <link rel="stylesheet" href="sass/style480.css">
+    <link rel="stylesheet" href="sass/navigation.css">
         <title>Pjt_3</title>
 </head>
 <body>
@@ -22,23 +23,25 @@
                             <h3>Waxom</h3>
 
                             <!-- burger-menu -->
-                            <div class="burger-menu">
-                                    <a href="#" class="burger-menu__button">
-                                        <span class="burger-menu__lines">   </span>
-                                    </a>
-                                    <nav class="burger-menu__nav">
-                                        <a href="#home" class="burger-menu__link" onclick="slowScroll('#home')">Главная</a>
-                                        <a href="#about" class="burger-menu__link" onclick="slowScroll('#about')">О нас</a>
-                                        <a href="#project" class="burger-menu__link" onclick="slowScroll('#project')">Портфолио</a>
-                                        <a href="#mobile" class="burger-menu__link" onclick="slowScroll('#mobile')">Особенности</a>
-                                        <a href="#messages" class="burger-menu__link" onclick="slowScroll('#messages')">Блог</a>
-                                        <a href="#" class="burger-menu__link" >Расценка</a>
-                                        <a href="#shorts" class="burger-menu__link" onclick="slowScroll('#shorts')">Шорткоды</a>
-                                        <a href="#go"  id="go" class="burger-menu__link">Контакты</a>
-                                    </nav>
-                                    <div class="burger-menu__overlay">
-                                    </div>
-                                </div>
+
+                                
+                            <a href="#" class="menu-link">
+                                <span></span>
+                            </a>
+                            <div class="menu"> 
+                                <ul>
+                                <li><a href="#home"  class="menu-item" onclick="slowScroll('#home')" >Главная</a></li>
+                                <li><a href="#about"  class="menu-item" onclick="slowScroll('#about')" >О нас</a></li>
+                                <li><a href="#project"  class="menu-item" onclick="slowScroll('#project')" >Портфолио</a></li>
+                                <li><a href="#mobile" class="menu-item" onclick="slowScroll('#mobile')" >Особенности</a></li>
+                                <li><a href="#messages"  class="menu-item" onclick="slowScroll('#messages')">Блог</a></li>
+                                <li><a href="#" >Расценка</a></li>
+                                <li><a href="#shorts"   class="menu-item" onclick="slowScroll('shorts')">Шорткоды</a></li>
+                                <li><a href="#contac" id="contac">Контакты</a></li>
+                                
+                                </ul>
+                            </div>
+
                             <!-- burger-menu -->
 
                         </div> 
@@ -51,37 +54,22 @@
                                 <li class="nav"> <a href="#messages" class="menu-item" onclick="slowScroll('#messages')">Блог</a> </li>
                                 <li class="nav"> <a href="#" class="menu-item" >Расценка</a> </li>
                                 <li class="nav"> <a href="#shorts" class="menu-item" onclick="slowScroll('#shorts')">Шорткоды</a> </li>
-                                <li class="nav"> <a href="#go" id="go" class="menu-item" >Контакты</a> </li>
+                                <li class="nav"><a href="#contact" id="contact" class="menu-item" >Контакты</a></li>
                             </ul>
-                        
+                            
                     </div>
                     <div class="header-center">
                         <h2>Уникальный и современный дизайн</h2>
                         <h1>Шаблон портфолио</h1>
                         <p>По мере того, как WEB среда развивается, меняются восприятие
                         пользователем дизайна и оформления контента.</p>
-                        <a href="#" class="button">Сделать заказ</a>
+                        <a href="#home" id="cent" class="button">Сделать заказ</a>
                     </div>
                 </div>
             </div>
         </div>
+       
     </header>
-
-    <!-- ERROR -->
-    <div id="modal_form"><!-- Сaмo oкнo --> 
-        <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть --> 
-       <h4>Телефон:</h4>
-       <p>+3809435344</p>
-       <p>+3834435353</p>
-       <p>+3809465328</p>
-       <h4>E-mail</h4>
-       <p>Nikita.Babanin.@mail.ru</p>
-       <p>portfolio-@mail.ru</p>
-       <h4>Веб-сайт</h4>
-       <p> <a href="https://alluine.ru/pjt_2/">alluine.ru/pjt_2/</a></p>
-  </div>
-  <div id="overlay">Lorem, ipsum.</div><!-- Пoдлoжкa -->
-    <!-- ERROR -->
         <!-- about upp -->
     <section id="about">
         <div class="wrapper">
@@ -138,7 +126,7 @@
                         <p>Не забудьте оценить шаблон. Большое спасибо!</p>
                     </div>
                     <div class="wp-button" id="cent">
-                        <a href="#">купить</a>
+                        <a href="#" id="buy">купить</a>
                     </div>
                 </div>
             </div>
@@ -344,7 +332,7 @@
                     Пользователь просто обращается к веб-серверу, проходит процесс идентификации пользователя, 
                     после чего он добавляет новую запись к своей коллекции. </p>
                    <div class="btn-info">
-                        <a href="#">Читать дальше</a>
+                        <a href="#" id=foot-link>Читать дальше</a>
                         <img src="images/arrow_info.png" alt="">
                    </div>
                 </div>
@@ -428,6 +416,9 @@
         </div>    
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 
+    
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -23,21 +23,6 @@
             display:none;
         }
     }
-
-    /*burger-menu*/
-.burger-menu{
-    display:block;
-}
-
-    .logo{ width:20%;margin:auto}
-    @media screen and(max-width:690px){
-        .header-center{
-            h2{
-                display:none;
-            }
-        }
-    }
-    
     /*about*/
     .about{
         display:flex;

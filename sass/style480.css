@@ -34,23 +34,6 @@
   .header-top h3 {
     display: none;
   }
-  /*burger-menu*/
-  .burger-menu {
-    display: block;
-  }
-  .logo {
-    width: 20%;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) and (max-width: 690px) {
-  .header-center h2 {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
   /*about*/
   .about {
     display: -webkit-box;

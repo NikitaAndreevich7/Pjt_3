@@ -1,27 +1,19 @@
-function burgerMenu(selector){
-    let menu = $(selector);
-    let button = menu.find('.burger-menu__button');
-    let links = menu.find('burger-menu__link');
-    let overlay = menu.find('.burger-menu__overlay');
-
-    button.on('click', (e) => {
-        e.preventDefault();
-        toggleMenu();
+$(document).ready(function(){
+    var link = $('.menu-link');
+    var link_active = $('.menu-link_active');
+    var menu = $('.menu');
+    var nav_link = $('.menu a');
+    link.click(function(){
+        link.toggleClass('menu-link_active');
+        menu.toggleClass('menu_active');
     });
-    links.on('click',() => toggleMenu())
-    overlay.on('click', () => toggleMenu());
+    nav_link.click(function(){
+        link.toggleClass('menu-link_active');
+        menu.toggleClass('menu_active');
+    });
+    
 
-    function toggleMenu(){
-        menu.toggleClass('burger-menu_active');
-
-        if(menu.hasClass('burger-menu_active')){
-            $('body').css('overflow', 'hidden');
-        }else{
-            $('body').css('overflow', 'visible');
-        }
-    }
-}
-burgerMenu('.burger-menu');
+});
 
 function slowScroll(id){
     var offset = 0;
@@ -33,24 +25,37 @@ function slowScroll(id){
 
 
 
-$(document).ready(function() { // вся мaгия пoсле зaгрузки стрaницы
-	$('a#go').click( function(event){ // лoвим клик пo ссылки с id="go"
-		event.preventDefault(); // выключaем стaндaртную рoль элементa
-		$('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-		 	function(){ // пoсле выпoлнения предъидущей aнимaции
-				$('#modal_form') 
-					.css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-					.animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз
-		});
-	});
-	/* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
-	$('#modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
-		$('#modal_form')
-			.animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
-				function(){ // пoсле aнимaции
-					$(this).css('display', 'none'); // делaем ему display: none;
-					$('#overlay').fadeOut(400); // скрывaем пoдлoжку
-				}
-			);
-	});
+
+// модальные окна
+
+
+
+var contact = document.getElementById("contact");
+    contact.addEventListener('click',function(){
+
+    swal("Контакты", "+3803434522\n\nnikita.babanin@mail.ru");
+       
 });
+
+
+var contac = document.getElementById("contac");
+    contac.addEventListener('click',function(){
+
+    swal("Контакты", "+3803434522\n\nnikita.babanin@mail.ru");
+
+});
+
+var cent = document.getElementById("cent");
+    cent.addEventListener('click',function(){
+
+        swal("Заявка отправлена", "В ближайшее время, наш консультант свяжется с вами.", "success");
+    })
+
+
+var foot = document.getElementById("foot-link");
+foot.addEventListener('click',function(){
+    swal("Вы уверенны что хотите выйти за пределы сайта?", {
+        buttons: ["Отмена!", "Продолжить!"],
+      });
+})
+

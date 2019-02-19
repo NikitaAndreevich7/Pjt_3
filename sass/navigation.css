@@ -1,4 +1,7 @@
 @media screen and (min-width: 320px) and (max-width: 1000px) {
+  .btn_up {
+    display: none;
+  }
   .menu {
     opacity: .99;
     left: -100vw;

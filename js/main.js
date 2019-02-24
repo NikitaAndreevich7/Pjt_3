@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     var link = $('.menu-link');
     var link_active = $('.menu-link_active');
@@ -13,8 +14,8 @@ $(document).ready(function(){
     });
     
 
-});
 
+});
 function slowScroll(id){
     var offset = 0;
     $('html,body').animate({
@@ -43,20 +44,7 @@ $(window).scroll(function(){
 
 
 
-var contact = document.getElementById("contact");
-    contact.addEventListener('click',function(){
 
-    swal("Контакты", "+3803434522\n\nnikita.babanin@mail.ru");
-       
-});
-
-
-var contac = document.getElementById("contac");
-    contac.addEventListener('click',function(){
-
-    swal("Контакты", "+3803434522\n\nnikita.babanin@mail.ru");
-
-});
 
 var cent = document.getElementById("cent");
     cent.addEventListener('click',function(){
@@ -71,4 +59,3 @@ foot.addEventListener('click',function(){
         buttons: ["Отмена!", "Продолжить!"],
       });
 })
-
